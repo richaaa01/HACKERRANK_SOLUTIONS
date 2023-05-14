@@ -7,7 +7,10 @@ SELECT DISTINCT(CITY) FROM STATION
 WHERE CITY REGEXP '^[aeiou]' AND CITY REGEXP '[aeiou]$';
 
 EXPLANATION:
-Refer to this website to understand the concept of REGEXP and then it should be easy for you to understand. I used REGEXP '^[aeiou]' for getting the 
+
+https://www.geeksforgeeks.org/mysql-regular-expressions-regexp/ 
+
+Refer to the above website to understand the concept of REGEXP and then it should be easy for you to understand. I used REGEXP '^[aeiou]' for getting the 
 data feilds which start with all those letter. You can use for a single letter as well, whose syntax would be REGEXP '^A'.
 
 Simlarly, for tuples ending with a,e,i,o,u we have used the syntax REGEXP '[aeiou]$'. For a single letter you can use it like REGEXP 'a$'
