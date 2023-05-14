@@ -1,0 +1,7 @@
+SELECT DISTINCT(CITY) FROM STATION 
+WHERE CITY NOT IN
+(SELECT CITY FROM STATION WHERE CITY REGEXP '[aeiou]$');
+
+https://www.geeksforgeeks.org/mysql-regular-expressions-regexp/
+CHECK OUT THIS WEBSITE FOR UNDERSTANDING 'REGEXP'
+
